@@ -14,3 +14,9 @@ and players being able to go wherever they want, there is a preset 9x9 sudoku
 grid they have to fill out (3x3 tic-tac-toe board with each square having their own
 3x3 tic-tac-toe board) with the correct numbers. If a player gets a number wrong,
 it skips their turn.
+## List of MIPS functions
+* printBoard: Prints the template of the mashup ultimate tic-tac-toe and sudoku board for the users, along with any relevant values within the board.
+* checkComplete: Checks if a player has won the game.
+* checkValidMove: Checks if the user input is the correct value of the sudoku board.
+* checkSuperTicTacToe: Checks for 3 in a row in each of the 9 smaller tic-tac-toe grids.
+* main: Prompts user to enter row, column, and value numbers, and calls the above functions as necessary.
