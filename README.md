@@ -1,4 +1,4 @@
-# Super Tic-Tac-Oku
+# Ultimate Tic-Tac-Oku
 ## Overview
 This game was created as a final project for my COMPE-271 (Computer Organization) class, with the intention
 to be an introduction to coding in Assembly. This game was created in both C and Assembly to demonstrate
