@@ -1,7 +1,7 @@
 # Sudoku-TicTacToe-Project
 ## Overview
 This game was created as a final project for my COMPE-271 class (Computer Organization), with the intention
-to be an introduction to coding in Assembly. This game was creating in both C++ and Assembly to demonstrate
+to be an introduction to coding in Assembly. This game was created in both C and Assembly to demonstrate
 the differing complexities between them to achieve the same goal.
 ## Demonstration
 YouTube link: https://www.youtube.com/watch?v=-jCYgdi0Qpw
