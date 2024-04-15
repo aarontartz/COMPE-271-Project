@@ -3,7 +3,7 @@
 
 .data
 
-welcome:	.asciiz "Welcome to Super Tic-Tac-Oku!\n\n"
+welcome:	.asciiz "Welcome to Ultimate Tic-Tac-Oku!\n\n"
 instructions:	.asciiz "Player 1, enter number values as normal.\nPlayer 2, enter number values holding shift.\nEach row and column are numbered 0 - 8. Do not enter any other value.\n\n"
 information:	.asciiz "Values that belong to Player 1 will appear normal.\nValues that belong to Player 2 will be surrounded in parentheses.\n\n"
 haveFun:	.asciiz "Have fun!\n\n"
