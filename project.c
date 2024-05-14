@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <stdbool.h>
+
 void printBoard(char userBoard[9][9]) {
     int rowCounter = 0;
     int columnCounter;
@@ -26,6 +27,7 @@ void printBoard(char userBoard[9][9]) {
         printf("+-----+-----+-----++-----+-----+-----++-----+-----+-----+\n");
     }
 }
+
 int checkComplete(int numSquares[2][9]) {
     if ((numSquares[0][0] == 1) && (numSquares[0][1] == 1) && (numSquares[0][2] == 1)) {
         return 0; //player 1 won
@@ -94,6 +96,7 @@ int checkComplete(int numSquares[2][9]) {
         return -1;
     }
 }
+
 bool checkValidMove(char userValue, char currentBoardVal, char correctValPlayer1, char correctValPlayer2) {
     if (currentBoardVal == ' ') {
         if ((userValue == correctValPlayer1) || (userValue == correctValPlayer2)) {
@@ -102,6 +105,7 @@ bool checkValidMove(char userValue, char currentBoardVal, char correctValPlayer1
     }
     return false;
 }
+
 void checkSuperTicTacToe(int numSquares[2][9], char userBoard[9][9], char correctBoardPlayer1[9][9], char correctBoardPlayer2[9][9]) { //change into bool later
     char newUserBoard[9][4][4];
     char newCorrectBoard1[9][4][4];
@@ -158,7 +162,7 @@ void checkSuperTicTacToe(int numSquares[2][9], char userBoard[9][9], char correc
             }
         }
     }
-    //storing 3 in a row's each player gets
+    //storing 3 in a row's each player gets:
     for (int gridNum = 0; gridNum < 9; ++gridNum) { //[gridNum][rowNum][columnNum]
         if ((newUserBoard[gridNum][0][0] == newCorrectBoard1[gridNum][0][0]) && (newUserBoard[gridNum][0][1] == newCorrectBoard1[gridNum][0][1]) && (newUserBoard[gridNum][0][2] == newCorrectBoard1[gridNum][0][2])) {
             //top horizontal
@@ -226,6 +230,7 @@ void checkSuperTicTacToe(int numSquares[2][9], char userBoard[9][9], char correc
         }
     }
 }
+
 int main(void){
     char userBoard[9][9] = { //test board use top board
         {'2', '3', '7', '8', '4', '1', '5', '6', ' '},
